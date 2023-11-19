@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Hostel Survey</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="report.html">Report</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Eco-Friendly Hostel Survey</h1>
+
+        <p>Please help us improve our waste management practices by taking this short survey.</p>
+
+        <form action="#">
+            <label for="waste-habits">What are your current waste habits?</label>
+            <select id="waste-habits" name="waste-habits">
+                <option value="try-to-reduce-waste">I try to reduce waste as much as possible.</option>
+                <option value="occasionally-consider-waste">I occasionally consider waste reduction, but it's not a top priority.</option>
+                <option value="rarely-think-about-waste">I rarely think about waste.</option>
+            </select>
+
+            <label for="waste-awareness">How aware are you of the environmental impact of waste?</label>
+            <select id="waste-awareness" name="waste-awareness">
+                <option value="very-aware">I am very aware of the environmental impact of waste.</option>
+                <option value="somewhat-aware">I am somewhat aware of the environmental impact of waste.</option>
+                <option value="not-aware">I am not very aware of the environmental impact of waste.</option>
+            </select>
+
+            <label for="waste-reduction-willingness">How willing are you to make changes to your habits to reduce waste?</label>
+            <select id="waste-reduction-willingness" name="waste-reduction-willingness">
+                <option value="very-willing">I am very willing to make changes to my habits to reduce waste.</option>
+                <option value="somewhat-willing">I am somewhat willing to make changes to my habits to reduce waste.</option>
+                <option value="not-willing">I am not willing to make changes to my habits to reduce waste.</option>
+            </select>
+
+            <label for="waste-reduction-suggestions">What suggestions do you have for how we can improve our waste management program?</label>
+            <textarea id="waste-reduction-suggestions" name="waste-reduction-suggestions" rows="5"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Eco-Friendly Hostel</p>
+    </footer>
+    <script>
+        (function() {
+          // Select all of the <article> elements
+          const articles = document.querySelectorAll('article');
+      
+          // Add a click event listener to each article
+          for (let article of articles) {
+            article.addEventListener('click', (event) => {
+              // Prevent default click behavior
+              event.preventDefault();
+      
+              // Get the clicked article
+              const clickedArticle = event.target.closest('article');
+      
+              // Toggle the active state of the clicked article
+              clickedArticle.classList.toggle('active');
+            });
+          }
+        })();
+      </script>
+      
+</body>
+</html>
+    

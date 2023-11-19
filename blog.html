@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Hostel</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="survey.html">Survey</a>
+            <a href="contact.html">Contact</a>
+            <a href="report.html">Report</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <img src="logo.jpeg" alt="logo">
+    </header>
+
+    <main>
+        <h1>Eco-Friendly Hostel</h1>
+
+        <p>Your Home Away from Home with a Sustainable Twist</p>
+
+        <p>At Eco-Friendly Hostel, we are committed to providing our guests with a comfortable and eco-conscious stay. We believe that sustainable practices are not just a responsibility but also an opportunity to enhance the overall hostel experience. Our comprehensive waste management system is a testament to our dedication to minimizing our environmental impact while fostering a sustainable lifestyle among our guests.</p>
+
+        <h2>Our Commitment to Sustainability</h2>
+
+        <p>We recognize the importance of preserving our planet for future generations. That's why we have embraced sustainability as a core value in our hostel operations. We strive to reduce waste, conserve resources, and promote eco-friendly practices throughout our hostel.</p>
+
+        <h2>Our Waste Management Program</h2>
+
+        <p>We have implemented a multi-pronged waste management program to minimize our environmental footprint. Here are some key highlights:</p>
+
+        <ul>
+            <li><strong>Waste Segregation:</strong> We encourage our guests to segregate their waste into designated bins for recyclables, compostable materials, and non-recyclables. This simple act helps us divert a significant amount of waste from landfills.</li>
+
+            <li><strong>Composting:</strong> We compost all food scraps and organic waste generated from our kitchen and dining areas. This process transforms waste into valuable nutrient-rich compost that we use to nurture our hostel's gardens.</li>
+
+            <li><strong>Recycling:</strong> We provide clear recycling guidelines and easy-to-access recycling bins to encourage guests to recycle their plastic, paper, metal, and glass waste. Recycled materials are then sent to local recycling facilities for processing.</li>
+
+            <li><strong>Reusable Items:</strong> We strive to minimize the use of disposable items by providing our guests with reusable alternatives such as water bottles, mugs, and plates.</li>
+        </ul>
+
+        <h2>Tips for Guests to Reduce Waste</h2>
+
+        <p>We encourage our guests to join us in our journey towards a sustainable hostel experience. Here are some simple tips to reduce waste during your stay:</p>
+
+        <ul>
+            <li>Bring your own reusable water bottle and toiletries: This simple step can significantly reduce the amount of single-use plastic waste.</li>
+
+            <li>Avoid single-use items: Opt for reusable options whenever possible, such as cloth napkins, reusable shopping bags, and reusable food containers.</li>
+
+            <li>Recycle and compost: Utilize the designated bins to segregate your waste and contribute to our waste management efforts.</li>
+        </ul>
+        
+        <a href="survey.html">Take our waste management survey</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Eco-Friendly Hostel</p>
+    </footer>
+    <script>
+        (function() {
+          // Select all of the <article> elements
+          const articles = document.querySelectorAll('article');
+      
+          // Add a click event listener to each article
+          for (let article of articles) {
+            article.addEventListener('click', (event) => {
+              // Prevent default click behavior
+              event.preventDefault();
+      
+              // Get the clicked article
+              const clickedArticle = event.target.closest('article');
+      
+              // Toggle the active state of the clicked article
+              clickedArticle.classList.toggle('active');
+            });
+          }
+        })();
+      </script>
+      
+</body>
+</html>

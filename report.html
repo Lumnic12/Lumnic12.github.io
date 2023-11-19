@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management Report</title>
+    <link rel="stylesheet" href="report.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="survey.html">Survey</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Waste Management Report</h1>
+
+        <p>Please report any waste issues you encounter by filling out this form.</p>
+
+        <form action="#">
+            <label for="waste-type">Type of Waste:</label>
+            <select id="waste-type" name="waste-type">
+                <option value="general-waste">General Waste</option>
+                <option value="paper-waste">Paper Waste</option>
+                <option value="plastic-waste">Plastic Waste</option>
+                <option value="glass-waste">Glass Waste</option>
+                <option value="metal-waste">Metal Waste</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="waste-quantity">Estimated Quantity:</label>
+            <input type="number" id="waste-quantity" name="waste-quantity" min="1">
+
+            <label for="waste-location">Room No.:</label>
+            <input type="text" id="waste-location" name="waste-location">
+
+            <label for="waste-suggestions">Suggestions:</label>
+            <textarea id="waste-suggestions" name="waste-suggestions" rows="5"></textarea>
+
+            <label for="waste-photo">Upload Photo (Optional):</label>
+            <input type="file" id="waste-photo" name="waste-photo" accept="image/*">
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Eco-Friendly Hostel</p>
+    </footer>
+    <script>
+        (function() {
+          // Select all of the <article> elements
+          const articles = document.querySelectorAll('article');
+      
+          // Add a click event listener to each article
+          for (let article of articles) {
+            article.addEventListener('click', (event) => {
+              // Prevent default click behavior
+              event.preventDefault();
+      
+              // Get the clicked article
+              const clickedArticle = event.target.closest('article');
+      
+              // Toggle the active state of the clicked article
+              clickedArticle.classList.toggle('active');
+            });
+          }
+        })();
+      </script>
+      
+</body>
+</html>
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Hostel Login/Signup</title>
+    <link rel="stylesheet" href="login.css">    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="survey.html">Survey</a>
+            <a href="contact.html">Contact</a>
+            <a href="report.html">Report</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Eco-Friendly Hostel</h1>
+
+        <div class="container">
+            <div class="login-signup">
+                <button id="oldUserBtn">Old User</button>
+                <button id="newUserBtn">New User</button>
+
+                <div id="loginForm">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+
+                <div id="signupForm" style="display: none;">
+                    <h2>Signup</h2>
+                    <form action="#">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="contact">Contact Number:</label>
+                        <input type="tel" id="contact" name="contact" required>
+
+                        <label for="uid">UID:</label>
+                        <input type="text" id="uid" name="uid" required>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <label for="room-no">Room No.:</label>
+                        <input type="number" id="room-no" name="room-no" required>
+
+                        <button type="submit">Signup</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Eco-Friendly Hostel</p>
+    </footer>
+    <script>
+        const oldUserBtn = document.getElementById('oldUserBtn');
+        const newUserBtn = document.getElementById('newUserBtn');
+        const loginForm = document.getElementById('loginForm');
+        const signupForm = document.getElementById('signupForm');
+
+        oldUserBtn.addEventListener('click', function() {
+            loginForm.style.display = 'block';
+            signupForm.style.display = 'none';
+        });
+
+        newUserBtn.addEventListener('click', function() {
+            loginForm.style.display = 'none';
+            signupForm.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
